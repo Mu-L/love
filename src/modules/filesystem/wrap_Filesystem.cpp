@@ -972,7 +972,7 @@ int extloader(lua_State *L)
 
 #ifdef LOVE_ANDROID
 	// Specifically Android, look the library path based on getCRequirePath first
-	filepath = love::android::getCRequirePath());
+	filepath = love::android::getCRequirePath();
 
 	if (!filepath.empty())
 	{
