@@ -331,7 +331,7 @@ void Shader::buildLocalUniforms(const spirv_cross::CompilerMSL &msl, const spirv
 
 		// get_declared_struct_member_size should be the padded size, which can be larger than
 		// the tightly packed size that external code will use with UniformInfo.
-		u.dataSizeAllocated = memberSize;
+		u.dataSizeAllocated = membersize;
 		u.dataSizePacked = getUniformDataSizePacked(u);
 		u.data = localUniformStagingData + offset;
 
